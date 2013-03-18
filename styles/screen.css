@@ -1,0 +1,116 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family:Arial, Helvetica, Sans-Serif;
+	font-size:14px;
+}
+
+body#table {
+	background-image:url('../img/field_background.png');
+}
+
+div.left {
+	position:relative;
+	float:left;
+}
+
+div.right {
+	position:relative;
+	float:right;
+}
+
+div.clear {
+	clear:both;
+}
+
+div#header div#route {
+	width:100%;
+	height:70px;
+	background:url('../img/header_fill.png') repeat-x;
+}
+
+div#header div#route div.left {
+	width:160px;
+	height:70px;
+	background-image:url('../img/header_left.png');
+}
+
+div#header div#route div.right {
+	width:40px;
+	height:70px;
+	background-image:url('../img/header_right.png');
+}
+
+div#header div#login {
+	padding:5px;
+	background-color:#404448;
+}
+
+div#header div#login div.button {
+	position:relative;
+	float:right;
+	padding:2px 10px 2px 10px;
+	border-left:1px solid #FFF;
+	color:#FFF;
+}	
+
+div#content {
+	padding:10px;
+	padding-top:40px;
+}
+
+h1 {
+	font-size:24px;
+	color:#ef9300;
+}
+
+div#content p {
+	margin:20px 0 20px 0;
+}
+
+//////////////////// register.html
+
+fieldset {
+	border:none;
+}
+
+fieldset.group {
+	width:280px;
+	padding:20px 0 20px 0;
+	border:none;
+}
+
+fieldset fieldset {
+	padding-left:20px;
+	margin:5px 0 5px 0;
+	border:none;
+}
+
+fieldset legend {
+	font-size:20px;
+	font-weight:bold;
+}
+
+fieldset input {
+	position:relative;
+	float:right;
+}
+
+fieldset input#register {
+	float:none;
+}
+
+fieldset select {
+	margin-left:32px;
+}
+
+//////////////////// table.html
+
+div#info {
+	width:100px;
+	height:100px;
+	background-color:#444;
+}

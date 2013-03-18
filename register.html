@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<title>Formel0 - Registrierung</title>
+	<link rel="stylesheet" type="text/css" href="styles/screen.css"/>
+</head>
+
+<body>
+	
+	<div id="header">
+		<div id="route">
+			<div class="left"></div>
+			<div class="right"></div>
+		</div>
+		<div id="login">
+			<div class="button">Einloggen</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	
+	<div id="content">
+		
+		<h1>Registrieren</h1>
+		<p>Bitte f&uuml;llen Sie das stehende Formular aus!</p>
+		
+		<form id="register">
+			
+			<fieldset class="group">
+				<legend>Pers&ouml;nliche Daten</legend>
+				<fieldset>
+					<label>Vorname</label>
+					<input type="text" name="vorname"/>
+				</fieldset>
+				<fieldset>
+					<label>Nachname</label>
+					<input type="text" name="nachname"/>
+				</fieldset>
+				<fieldset>
+					<label>Geburtstag</label>
+					<input type="text" name="geburtstag"/>
+				</fieldset>
+				<fieldset>
+					<label>Geschlecht</label>
+					<select>
+						<option>weiblich</option>
+						<option>m&auml;nnlich</option>
+					</select>
+				</fieldset>
+			</fieldset>
+			
+			<fieldset class="group">
+				<legend>Login Daten</legend>
+				<fieldset>
+					<label>Benutzername</label>
+					<input type="text" name="benutzername"/>
+				</fieldset>
+				<fieldset>
+					<label>Passwort</label>
+					<input type="text" name="passwort"/>
+				</fieldset>
+			</fieldset>
+			
+			<fieldset class="group">
+				<input type="submit" value="Registrieren" name="registrieren" id="register"/>
+			</fieldset>
+			
+		</form>
+		
+	</div>
+	
+</body>
+
+</html>
