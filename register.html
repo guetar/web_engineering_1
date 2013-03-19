@@ -9,56 +9,56 @@
 </head>
 
 <body>
-	<div id="header">
-		<div id="route">
+	<div class="header">
+		<div class="route">
 			<div class="left"></div>
 			<div class="right"></div>
 		</div>
-		<div id="login">
+		<div class="login">
 			<div class="button">Einloggen</div>
 			<div class="clear"></div>
 		</div>
 	</div>
 	
-	<div id="content">
+	<div class="content">
 		
 		<h1>Registrieren</h1>
 		<p>Bitte füllen Sie das stehende Formular aus!</p>
 		
-		<form id="register">
+		<form id="registeration">
 			
 			<fieldset class="group">
-				<legend>Pers&ouml;nliche Daten</legend>
+				<legend>Persönliche Daten</legend>
 				<fieldset>
-					<label>Vorname</label>
-					<input type="text" name="vorname"/>
+					<label for="firstname">Vorname
+					<input type="text" name="vorname" id="firstname"/></label>
 				</fieldset>
 				<fieldset>
-					<label>Nachname</label>
-					<input type="text" name="nachname"/>
+					<label for="surname">Nachname
+					<input type="text" name="nachname" id="surname"/></label>
 				</fieldset>
 				<fieldset>
-					<label>Geburtstag</label>
-					<input type="text" name="geburtstag"/>
+					<label for="birthday">Geburtstag
+					<input type="text" name="geburtstag" id="birthday"/></label>
 				</fieldset>
 				<fieldset>
-					<label>Geschlecht</label>
-					<select>
+					<label for="sex">Geschlecht
+					<select id="sex">
 						<option>weiblich</option>
 						<option>m&auml;nnlich</option>
-					</select>
+					</select></label>
 				</fieldset>
 			</fieldset>
 			
 			<fieldset class="group">
 				<legend>Login Daten</legend>
 				<fieldset>
-					<label>Benutzername</label>
-					<input type="text" name="benutzername"/>
+					<label for="username">Benutzername
+					<input type="text" name="benutzername" id="username"/></label>
 				</fieldset>
 				<fieldset>
-					<label>Passwort</label>
-					<input type="text" name="passwort"/>
+					<label for="password">Passwort
+					<input type="text" name="passwort" id="password"/> </label>
 				</fieldset>
 			</fieldset>
 			

@@ -32,30 +32,30 @@ div.clear {
 	clear:both;
 }
 
-div#header div#route {
+div.header div.route {
 	width:100%;
 	height:70px;
 	background:url('../img/header_fill.png') repeat-x;
 }
 
-div#header div#route div.left {
+div.header div.route div.left {
 	width:160px;
 	height:70px;
 	background-image:url('../img/header_left.png');
 }
 
-div#header div#route div.right {
+div.header div.route div.right {
 	width:40px;
 	height:70px;
 	background-image:url('../img/header_right.png');
 }
 
-div#header div#login {
+div.header div.login {
 	padding:5px;
 	background-color:#404448;
 }
 
-div#header div#login div.button {
+div.header div.login div.button {
 	position:relative;
 	float:right;
 	padding:2px 10px 2px 10px;
@@ -63,7 +63,7 @@ div#header div#login div.button {
 	color:#FFF;
 }	
 
-div#content {
+div.content {
 	padding:10px;
 	padding-top:40px;
 	background-color:#FFF;
@@ -81,7 +81,7 @@ h2 {
 	padding: 15px 15px 0 15px;
 }
 
-div#content p {
+div.content p {
 	margin:20px 0 20px 0;
 }
 
@@ -126,7 +126,7 @@ fieldset select {
 
 div#gamepad {
 	background-image:url(../img/field_background.png);
-	height: 800px;
+	height: 700px;
 }
 
 div#track {
@@ -161,13 +161,7 @@ div#finish {
 	background:url(../img/finish_road.png);
 }
 
-div#dice {
-	background: url(../img/wuerfel0.png) no-repeat;
-	float:left;	
-	width: 85px;
-	height: 85px;
-	padding-left: 50px;
-}
+
 
 div#info {
 	width:350px;
@@ -193,6 +187,28 @@ ul.left_infos {
 	padding-right: 15px;
 	padding-bottom: 15px;
 }
+
+div.dice {
+	background-color:#333;
+	width: 100px;
+	float: left;
+	margin: 15px 0px 0 15px;
+	border: 2px solid #CC6600;
+}
+
+p#diceDescription {
+	color: #FFF;
+	padding: 5px 5px 5px 5px;
+	text-align: center;
+}
+
+img#diceHimself {
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 5px;
+	padding-left: 7px;
+}
+
 
 p.note {
 	position: relative;
