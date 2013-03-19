@@ -6,6 +6,11 @@
 body {
 	font-family:Arial, Helvetica, Sans-Serif;
 	font-size:14px;
+	position: absolute;
+	margin-left: 50px;
+	margin-top: 30px;
+	min-width: 800px;
+	background-color: #999;
 }
 
 body#table {
@@ -60,6 +65,8 @@ div#header div#login div.button {
 div#content {
 	padding:10px;
 	padding-top:40px;
+	background-color:#FFF;
+	border: 3px;
 }
 
 h1 {
@@ -112,5 +119,15 @@ fieldset select {
 div#info {
 	width:100px;
 	height:100px;
-	background-color:#444;
+	background-color:#404448;
 }
+
+div#gamepad {
+	background-image:url(../img/field_background.png);
+}
+
+p#note {
+	padding-top: 5px;
+	text-align: right;
+}
+
