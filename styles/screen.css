@@ -10,6 +10,7 @@ body {
 	margin-left: 50px;
 	margin-top: 30px;
 	min-width: 800px;
+	min-height: 500px;
 	background-color: #999;
 }
 
@@ -74,11 +75,17 @@ h1 {
 	color:#ef9300;
 }
 
+h2 {
+	font-size:18px;
+	color:#ef9300;
+	padding: 15px 15px 0 15px;
+}
+
 div#content p {
 	margin:20px 0 20px 0;
 }
 
-//////////////////// register.html
+/*register.html*/
 
 fieldset {
 	border:none;
@@ -114,20 +121,81 @@ fieldset select {
 	margin-left:32px;
 }
 
-//////////////////// table.html
-
-div#info {
-	width:100px;
-	height:100px;
-	background-color:#404448;
-}
+/* table.html
+*/
 
 div#gamepad {
 	background-image:url(../img/field_background.png);
+	height: 800px;
 }
 
-p#note {
+div#track {
+	
+	float: left;
+	height: 560px;
+	padding-top: 15px;
+	padding-left: 30px;
+}
+
+div.street {
+	width: 123px;
+	height: 80px;
+	background:url(../img/empty_road.png);
+}
+
+div.oil_street {
+	width: 123px;
+	height: 80px;
+	background:url(../img/oil_road.png);
+}
+
+div#start {
+	width: 123px;
+	height: 98px;
+	background:url(../img/start_road.png);
+}
+
+div#finish {
+	width: 123px;
+	height: 98px;
+	background:url(../img/finish_road.png);
+}
+
+div#dice {
+	background: url(../img/wuerfel0.png) no-repeat;
+	float:left;	
+	width: 85px;
+	height: 85px;
+	padding-left: 50px;
+}
+
+div#info {
+	width:350px;
+	background-color:#404448;
+	float: left;
+	font-size: 16px;
+}
+
+
+ul {
+	list-style-type: none;
+}
+
+ul.left_labels {
+	float: left;
+	color: #C60;
+	padding: 15px;
+}
+
+ul.left_infos {
+	color: #FFF;
+	padding-top: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+}
+
+p.note {
+	position: relative;
 	padding-top: 5px;
 	text-align: right;
 }
-
