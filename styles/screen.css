@@ -216,3 +216,15 @@ p.note {
 	padding-top: 5px;
 	text-align: right;
 }
+
+div.carleft {
+	float:left;
+	padding: 10px 20px 0px 15px;
+	visibility:hidden;
+}
+
+div.carright {
+	padding-top: 10px;
+	visibility: hidden;
+}
+
