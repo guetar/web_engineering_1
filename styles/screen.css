@@ -6,11 +6,12 @@
 body {
 	font-family:Arial, Helvetica, Sans-Serif;
 	font-size:14px;
-	position: absolute;
-	margin-left: 50px;
-	margin-top: 30px;
+	position: relativ;
+	margin: 50px 30px 50px 30px;
 	min-width: 800px;
+	max-width: 1280px;
 	min-height: 500px;
+	max-height: 1080px;	
 	background-color: #999;
 }
 
