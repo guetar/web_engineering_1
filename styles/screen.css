@@ -243,3 +243,6 @@ div.carright {
     left:75px;
 }
 
+img#diceHimself {
+	cursor: pointer;
+}
