@@ -12,7 +12,7 @@ body {
 	max-width: 1280px;
 	min-height: 500px;
 	max-height: 1080px;	
-	background-color: #666;
+	background-color: #999;
 }
 
 body#table {
@@ -88,11 +88,12 @@ div.content p {
 
 /*register.html*/
 
-form {
-	width:280px;
+fieldset {
+	border:none;
 }
 
 fieldset.group {
+	width:280px;
 	padding:20px 0 20px 0;
 	border:none;
 }
@@ -113,6 +114,10 @@ fieldset input {
 	float:right;
 }
 
+fieldset input.error{
+	background-color:red;
+}
+
 fieldset input#register {
 	float:none;
 }
@@ -121,7 +126,13 @@ fieldset select {
 	margin-left:32px;
 }
 
-/* table.html */
+label.error {
+	display:none;
+	color:red;
+}
+
+/* table.html
+*/
 
 div#gamepad {
 	background-image:url(../img/field_background.png);
@@ -129,6 +140,7 @@ div#gamepad {
 }
 
 div#track {
+	
 	float: left;
 	height: 560px;
 	padding-top: 15px;
@@ -139,24 +151,28 @@ div.street {
 	width: 123px;
 	height: 80px;
 	background:url(../img/empty_road.png);
+	position:relative;
 }
 
 div.oil_street {
 	width: 123px;
 	height: 80px;
 	background:url(../img/oil_road.png);
+	position:relative;
 }
 
 div#start {
 	width: 123px;
 	height: 98px;
 	background:url(../img/start_road.png);
+	position:relative;
 }
 
 div#finish {
 	width: 123px;
 	height: 98px;
 	background:url(../img/finish_road.png);
+	position:relative;
 }
 
 
@@ -215,13 +231,14 @@ p.note {
 }
 
 div.carleft {
-	float:left;
-	padding: 10px 20px 0px 15px;
-	visibility:hidden;
+	padding-top: 10px;
+	position:absolute;
+    left:15px;
 }
 
 div.carright {
 	padding-top: 10px;
-	visibility: hidden;
+	position:absolute;
+    left:75px;
 }
 

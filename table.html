@@ -1,16 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" 
 "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
+	<meta http-equiv="content-type" content="text/html"/>
 	<title>Formel0 - Spielen</title>
 	<link rel="stylesheet" type="text/css" href="styles/screen.css"/>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-</head>
 
+    <script type="text/javascript" src="js/jQuery.js"></script>
+    <script type="text/javascript">
+    // <![CDATA[
+    $(document).ready(function(){
+        $("#diceHimself").click(function(){
+            $("#p1old").fadeOut(1000);
+            $("#p1new").delay(1000).fadeIn(1000);
+        });
+
+
+        $("#p1new").fadeOut(0);
+    });
+    // ]]>
+    </script>
+</head>
 <body>
-	
 	<div class="header">
 		<div class="route">
 			<div class="left"></div>
@@ -23,7 +36,7 @@
 		</div>
 	</div>
 	
-	<div id="gamepad">
+<div id="gamepad">
         <div id="info">
             <h2>Spielinformationen</h2>
             <ul class="left_labels">
@@ -49,17 +62,29 @@
             </ul>
         </div>
         <div id="track">
-        	<div id="start"></div>
+        	<div id="start">
+                <div id="p1new" class="carleft">
+                    <img src="img/car1.png" alt="Player 1"/>
+                </div>
+            </div>
             <div class="street"></div>
+            <div class="oil_street">
+            <div id="p1old" class="carleft">
+                    <img src="img/car1.png" alt="Player 1"/>
+                </div>
+            </div>
+            <div class="street"></div>
+            <div class="street">
+                <div id="p2" class="carright">
+                    <img src="img/car2.png" alt="Player 2"/>
+                </div>
+            </div>
             <div class="oil_street"></div>
-            <div class="street"></div>
-            <div class="oil_street"></div>
-            <div class="street"></div>
             <div id="finish">1</div>
         </div>
         <div class="dice">
             <p id="diceDescription">Super Mario</p>
-            <img src="img/wuerfel0.png" width="85" height="85" alt="Würfel" id="diceHimself" /> 
+            <img src="img/wuerfel1.png" width="85" height="85" alt="Würfel" id="diceHimself" /> 
         </div>
 	</div>
     <p class="note">(c) Formula0</p>

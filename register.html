@@ -1,16 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 	<title>Formel0 - Registrierung</title>
 	<link rel="stylesheet" type="text/css" href="styles/screen.css"/>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta  content="text/html" />
+
+    <script type="text/javascript" src="js/jQuery.js" ></script>
+    <script type="text/javascript">
+    // <![CDATA[
+	$(document).ready(function(){
+		var unvalid=false;
+		var pwvalid=false;
+		var bdvalid=true;
+
+		$("#username").keyup(function() {
+    		if($(this).val().trim().length < 4 || $(this).val().trim().length > 8) {
+    			if($(this).val().length == 0) {
+    				$("#unerror").hide();
+    				$(this).removeClass("error");
+    			} else {
+    				$("#unerror").show();
+    				$(this).addClass("error");
+    			}
+    			unvalid=false;
+    		} else {
+    			$("#unerror").hide();
+    			$(this).removeClass("error");
+    			unvalid = true;
+    		}
+    		checkButton();
+    	});
+
+    	$("#password").keyup(function() {
+    		if($(this).val().length < 4 || $(this).val().length > 8) {
+    			if($(this).val().length == 0) {
+    				$("#pwerror").hide();
+    				$(this).removeClass("error");
+    			} else {
+    				$("#pwerror").show();
+    				$(this).addClass("error");
+    			}
+    			pwvalid=false;
+    		} else {
+    			$("#pwerror").hide();
+    				$(this).removeClass("error");
+    			pwvalid = true;
+    		}
+    		checkButton();
+    	});
+
+    	var regex = /^(0\d|[12]\d|3[01])\.(0\d|1[012])\.(19|20)\d\d$/;
+
+    	$("#birthday").keyup(function() {
+    		if(!$(this).val().match(regex)==1 && $(this).val().length > 0 ) {
+    			$("#bderror").show();
+    			$(this).addClass("error");
+    			bdvalid=false;
+    		} else {
+    			$("#bderror").hide();
+    			$(this).removeClass("error");
+    			bdvalid = true;
+    		}
+    		checkButton();
+    	});
+
+    	function checkButton() {
+    		if(unvalid && pwvalid && (bdvalid || $("#birthday").val().length == 0)) {
+    			$("#register").removeAttr('disabled');
+    		} else {
+    			$("#register").attr("disabled", "disabled");
+    		}
+    	}
+
+    	checkButton();
+	});
+	// ]]>
+	</script>
 </head>
 
 <body>
-	
 	<div class="header">
 		<div class="route">
 			<div class="left"></div>
@@ -21,58 +91,61 @@
 			<div class="clear"></div>
 		</div>
 	</div>
-	
+
 	<div class="content">
-		
+
 		<h1>Registrieren</h1>
-		<p>Bitte füllen Sie das stehende Formular aus!</p>
-		
+		<p>Bitte füllen Sie das unten stehende Formular aus!</p>
+
 		<form id="registeration" action="">
-			
+
 			<fieldset class="group">
 				<legend>Persönliche Daten</legend>
 				<fieldset>
 					<label for="firstname">Vorname
-					<input type="text" name="firstname" id="firstname"/></label>
+					<input type="text" name="vorname" id="firstname"/></label>
 				</fieldset>
 				<fieldset>
 					<label for="surname">Nachname
-					<input type="text" name="surname" id="surname"/></label>
+					<input type="text" name="nachname" id="surname"/></label>
 				</fieldset>
 				<fieldset>
 					<label for="birthday">Geburtstag
-					<input type="text" name="birthday" id="birthday"/></label>
+					<input type="text" name="geburtstag" id="birthday"/></label>
+					<label id="bderror" class="error">Verwenden Sie bitte folgendes Datumsformat: dd.mm.yyyy (z.B. 24.12.2012).</label>
 				</fieldset>
 				<fieldset>
 					<label for="sex">Geschlecht
 					<select id="sex">
 						<option>weiblich</option>
-						<option>männlich</option>
+						<option>m&auml;nnlich</option>
 					</select></label>
 				</fieldset>
 			</fieldset>
-			
+
 			<fieldset class="group">
 				<legend>Login Daten</legend>
 				<fieldset>
 					<label for="username">Benutzername
-					<input type="text" name="username" id="username"/></label>
+					<input type="text" name="benutzername" id="username"/></label>
+					<label id="unerror" class="error">Der Benutzername muss mindestens 4 Zeichen und darf maximal 8 Zeichen enthalten.</label>
 				</fieldset>
 				<fieldset>
 					<label for="password">Passwort
-					<input type="text" name="password" id="password"/> </label>
+					<input type="password" name="passwort" id="password"/> </label>
+					<label id="pwerror" class="error">Der Benutzername muss mindestens 4 Zeichen und darf maximal 8 Zeichen enthalten.</label>
 				</fieldset>
 			</fieldset>
-			
+
 			<fieldset class="group">
-				<input type="submit" value="Registrieren" name="register" id="register"/>
+				<input type="submit" value="Registrieren" name="registrieren" id="register"/>
 			</fieldset>
-			
+
 		</form>
-		
+
 	</div>
     <p class="note">(c) 2013 Formel 0 </p>
-	
+
 </body>
 
 </html>
