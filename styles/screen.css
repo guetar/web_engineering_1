@@ -12,7 +12,7 @@ body {
 	max-width: 1280px;
 	min-height: 500px;
 	max-height: 1080px;	
-	background-color: #666;
+	background-color: #999;
 }
 
 body#table {
@@ -31,6 +31,11 @@ div.right {
 
 div.clear {
 	clear:both;
+}
+
+div.header {
+	border: 1px;
+	border-style:solid solid none solid;
 }
 
 div.header div.route {
@@ -68,7 +73,8 @@ div.content {
 	padding:10px;
 	padding-top:40px;
 	background-color:#FFF;
-	border: 3px;
+	border: 1px;
+	border-style:solid;
 }
 
 h1 {
@@ -92,10 +98,6 @@ fieldset {
 	border:none;
 }
 
-form {
-	width:280px;
-}
-
 fieldset.group {
 	padding:20px 0 20px 0;
 	border:none;
@@ -112,9 +114,9 @@ fieldset legend {
 	font-weight:bold;
 }
 
-fieldset input {
-	position:relative;
-	float:right;
+fieldset label {
+	display:inline-block;
+	width: 165px;
 }
 
 fieldset input.error{
@@ -123,10 +125,6 @@ fieldset input.error{
 
 fieldset input#register {
 	float:none;
-}
-
-fieldset select {
-	margin-left:32px;
 }
 
 label.error {
@@ -229,6 +227,7 @@ p.note {
 	position: relative;
 	padding-top: 5px;
 	text-align: right;
+	font-size:small;
 }
 
 div.carleft {
