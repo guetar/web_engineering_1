@@ -12,7 +12,7 @@ body {
 	max-width: 1280px;
 	min-height: 500px;
 	max-height: 1080px;	
-	background-color: #999;
+	background-color: #666;
 }
 
 body#table {
@@ -88,12 +88,11 @@ div.content p {
 
 /*register.html*/
 
-fieldset {
-	border:none;
+form {
+	width:280px;
 }
 
 fieldset.group {
-	width:280px;
 	padding:20px 0 20px 0;
 	border:none;
 }
@@ -122,8 +121,7 @@ fieldset select {
 	margin-left:32px;
 }
 
-/* table.html
-*/
+/* table.html */
 
 div#gamepad {
 	background-image:url(../img/field_background.png);
@@ -131,7 +129,6 @@ div#gamepad {
 }
 
 div#track {
-	
 	float: left;
 	height: 560px;
 	padding-top: 15px;
