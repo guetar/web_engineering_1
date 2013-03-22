@@ -131,8 +131,7 @@ label.error {
 	color:red;
 }
 
-/* table.html
-*/
+/* table.html */
 
 div#gamepad {
 	background-image:url(../img/field_background.png);
@@ -181,7 +180,6 @@ div#info {
 	width:350px;
 	background-color:#404448;
 	float: left;
-	font-size: 16px;
 }
 
 
