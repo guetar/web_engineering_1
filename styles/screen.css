@@ -5,13 +5,13 @@
 
 body {
 	font-family:Arial, Helvetica, Sans-Serif;
-	font-size:14px;
-	position: relativ;
+	position: relative;
 	margin: 50px 30px 50px 30px;
 	min-width: 800px;
 	max-width: 1280px;
 	min-height: 500px;
-	max-height: 1080px;	
+	max-height: 1080px;
+	font-size:14px;
 	background-color: #999;
 }
 
@@ -70,7 +70,7 @@ div.header div.login div.button {
 }	
 
 div.content {
-	padding:10px;
+	padding:20px;
 	padding-top:40px;
 	background-color:#FFF;
 	border: 1px;
@@ -92,7 +92,7 @@ div.content p {
 	margin:20px 0 20px 0;
 }
 
-/*register.html*/
+/* register.html */
 
 fieldset {
 	border:none;
@@ -175,30 +175,26 @@ div#finish {
 	position:relative;
 }
 
-
-
 div#info {
-	width:350px;
+	width:240px;
+	padding:0 20px 20px 20px;
+	font-size:12px;
 	background-color:#404448;
 	float: left;
 }
 
-
-ul {
-	list-style-type: none;
+div#info table {
+	color:#ef9300;
 }
 
-ul.left_labels {
-	float: left;
-	color: #C60;
-	padding: 15px;
+div#info table th {
+	padding:20px 0 20px 0;
+	font-size:16px;
+	text-align:left;
 }
 
-ul.left_infos {
-	color: #FFF;
-	padding-top: 15px;
-	padding-right: 15px;
-	padding-bottom: 15px;
+div#info table td {
+	padding: 2px 0 2px 0;
 }
 
 div.dice {
@@ -221,7 +217,6 @@ img#diceHimself {
 	padding-bottom: 5px;
 	padding-left: 7px;
 }
-
 
 p.note {
 	position: relative;

@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
 "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de">
 <head>
 	<title>Formel0 - Spielen</title>
 	<link rel="stylesheet" type="text/css" href="styles/screen.css"/>
@@ -36,31 +36,39 @@
 		</div>
 	</div>
 	
-<div id="gamepad">
-        <div id="info">
-            <h2>Spielinformationen</h2>
-            <ul class="left_labels">
-                <li>Führender</li>
-                <li>Runde</li>
-                <li>Zeit</li>
-                <li>Würfelergebnis Super C</li>
-            </ul>
-            <ul class="left_infos">
-                <li id="firstPlayer">Super C</li>
-                <li id="round">1</li>
-                <li id="time">02:30</li>
-                <li id="diceResult">.</li>
-            </ul>
-            <h2>Spieler</h2>
-            <ul class="left_labels">
-                <li>Spieler 1</li>
-                <li>Spieler 2</li>
-            </ul>
-            <ul class="left_infos">
-                <li id="player1">Super Mario</li>
-                <li id="player2">Super C</li>
-            </ul>
-        </div>
+	<div id="gamepad">
+		
+		<div id="info">
+	        <table>
+	            <tr><th>Spielinformationen</th></tr>
+	            <tr>
+					<td class="label">Führender</td>
+	                <td class="info" id="firstPlayer">Super C</td>
+				</tr>
+				<tr>
+					<td class="label">Runde</td>
+					<td class="info" id="round">1</td>
+				</tr>
+				<tr>
+	                <td class="label">Zeit</td>
+	                <td class="info" id="time">02:30</td>
+				</tr>
+				<tr>
+					<td class="label">Würfelergebnis Super C</td>
+					<td class="info" id="diceResult">.</td>
+				</tr>
+				<tr><th>Spieler</th></tr>
+	            <tr>
+					<td class="label">Spieler 1</td>
+	                <td class="info" id="player1">Super Mario</td>
+				</tr>
+				<tr>
+					<td class="label">Spieler 2</td>
+					<td class="info" id="player2">Super C</td>
+				</tr>
+			</table>
+		</div>
+		
         <div id="track">
         	<div id="start">
                 <div id="p1new" class="carleft">
@@ -82,10 +90,12 @@
             <div class="oil_street"></div>
             <div id="finish">1</div>
         </div>
+
         <div class="dice">
             <p id="diceDescription">Super Mario</p>
             <img src="img/wuerfel1.png" width="85" height="85" alt="Würfel" id="diceHimself" /> 
         </div>
+
 	</div>
     <p class="note">(c) Formula0</p>
 </body>
